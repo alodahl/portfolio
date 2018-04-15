@@ -47,46 +47,69 @@
               I look forward to hearing from you!
             </p>
         </div>
-          <label for="firstName" class="name-label first-name">
-            first name
+          <label for="name" class="name-label first-name">
+            full name
           </label>
           <input
             type="text"
-            id="firstName"
-            class="block block-input"/>
-          <label for="lastName" class="name-label">
-            last name
-          </label>
-          <input
-            type="text"
-            id="lastName"
+            name="name"
+            id="name"
             class="block block-input"
+            value=""
+            autocomplete='name'
+          />
+          <label for="organization" class="name-label">
+            organization
+          </label>
+          <input
+            type="text"
+            name="organization"
+            id="organization"
+            class="block block-input"
+            value=""
+            autocomplete='organization'
           />
           <label for="email" class="block">
             email address
           </label>
           <input
             type="email"
+            name="email"
             id="email"
             class="block block-input"
+            value=""
+            autocomplete='email'
           />
           <label for="subject" class="block">
             message subject
           </label>
           <input
             type="text"
+            name="subject"
             id="subject"
             class="block block-input"
+            value=""
+            autocomplete='subject'
           />
-          <label for="issue" class="block">
+          <label for="email-text" class="block">
             please enter your message here:
           </label>
-          <textarea type="text" id="issue" class="block block-input issue">
+          <textarea
+          type="text"
+          name="email-text"
+          id="email-text"
+          class="block block-input issue"
+          value=""
+          required=true
+          >
           </textarea>
           <div class="extra"></div>
-          <button class="send-message-button" type="submit">send message</button>
+          <button class="send-message-button js-send-message-button" type="submit">send message</button>
         </form>
       </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="contact.js"></script>
   </body>
 </html>

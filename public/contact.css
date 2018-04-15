@@ -57,6 +57,23 @@ textarea,
   display: block;
   height: 20px;
 }
+.sent-message-alert {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 40px;
+  text-align: center;
+  position: relative;
+}
+.failed-alert {
+  border: 1px solid orange;
+  color: orange;
+}
+.close-button {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 15px;
+}
 
 
 @media only screen and (min-width: 530px) {
