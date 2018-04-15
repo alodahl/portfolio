@@ -1,0 +1,102 @@
+.form-header-div {
+  max-width: 300px;
+  height: 340px;
+}
+.contact-form {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  color: var(--gray);
+  font: 18px "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
+  font-weight: 200;
+  text-align: center;
+  margin: 100px auto;
+  width: 300px;
+  height: 100vh;
+}
+input,
+textarea,
+.send-message-button {
+  box-sizing: border-box;
+  margin: 5px 0 20px 0;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  font: 16px "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
+  text-align: center;
+}
+.block, .message {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+.message {
+  clear: left;
+  margin: 50px auto;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--dark);
+}
+.block-input {
+  display: block;
+  margin: 5px auto 20px auto;
+  height: 25px;
+}
+.issue {
+  height: 200px;
+  text-align: left;
+}
+.send-message-button {
+  width: 100%;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 4px;
+  background-color: var(--accent);
+  color: white;
+}
+.extra {
+  display: block;
+  height: 20px;
+}
+
+
+@media only screen and (min-width: 530px) {
+  .form-header-div {
+    max-width: 570px;
+    padding: 0 40px 40px 40px;
+    text-align: center;
+    height: 300px;
+  }
+  .message {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .form-header-div {
+    max-width: 570px;
+    padding: 0 40px 40px 40px;
+    text-align: center;
+    height: 200px;
+  }
+  .contact-form {
+    width: 600px;
+  }
+  .block,
+  .message, .send-message-button {
+    width: 550px;
+  }
+  .message {
+    padding-top: 90px;
+    clear: none;
+  }
+  .block-input,
+  .name-label {
+    width: 550px;
+  }
+  .issue {
+    height: 140px;
+  }
+  .name-label {
+    clear: both;
+  }
+}

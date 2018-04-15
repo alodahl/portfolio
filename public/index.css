@@ -1,0 +1,222 @@
+:root {
+  --dark: #0081AC;
+  --accent: #31AFD4;
+  --lightgray: #EEE;
+  --gray: #1e1e1e;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  margin: 0;
+  text-align: left;
+}
+a {
+  text-decoration: none;
+}
+main {
+  margin: 40px auto;
+  width: 90%;
+}
+.navbar {
+  height: 70px;
+  background-color: black;
+  color: white;
+  padding: 0 20px;
+}
+.navlinks-div {
+ float: right;
+}
+.navlinks-div:before {
+  content:'\2630';
+  margin-top: 40px;
+}
+.navlink {
+ display: none;
+}
+.navlink:hover {
+  color: var(--dark);
+}
+.name {
+  float: left;
+  height: 70px;
+}
+.name p {
+  font: 30px "SignPainter", "Lato", "Helvetica Neue", Arial, sans-serif;
+  margin: 0 10px;
+  color: var(--accent);
+  line-height: 75px; //navbar height
+}
+.name p:hover {
+  color: white;
+}
+.portrait, .portrait-small {
+  display: block;
+  border-radius: 50%;
+  shape-outside: circle(50%);
+}
+.portrait {
+  height: 300px;
+  margin: 50px auto 0 auto;
+}
+.portrait-small {
+  height: 150px;
+  margin: 40px auto;
+}
+h1 {
+  text-align: center;
+  font: 72px "SignPainter", "Lato", "Helvetica Neue", Arial, sans-serif;
+  color: var(--gray);
+}
+.bio {
+  text-align: center;
+  margin: 0 40px 40px 40px;
+}
+.wrapper {
+  margin: 40px auto;
+  width: 90%;
+}
+.project-div {
+  margin: 40px auto;
+}
+h2, h3 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 200;
+}
+h3 {
+  color: var(--accent);
+}
+.button-div {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+.button-link {
+  width: 85%;
+  display: inline-block;
+  padding: 4px;
+  background-color: var(--accent);
+  color: white;
+  box-sizing: border-box;
+  margin: 15px;
+  border: 1px solid var(--accent);
+
+  font: 20px "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+.button-link-email {
+  background-color: white;
+  color: var(--accent);
+}
+.button-link-bottom {
+  background-color: var(--dark);
+  border: 1px solid var(--dark);
+}
+.button-link-email-bottom {
+  background-color: white;
+  color: var(--dark);
+  border: 1px solid var(--dark);
+}
+iframe, iframe:hover {
+  border: 2px solid var(--lightgray);
+  height: 600px;
+  width: 100%;
+}
+iframe {
+  +filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+iframe:hover {
+  +filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+}
+.link {
+  color: var(--accent);
+}
+.link:hover {
+  color: var(--dark);
+}
+.project-link {
+  margin-right: 10px;
+  color: var(--accent);
+}
+.project-link:hover {
+  margin-right: 10px;
+  color: var(--dark);
+}
+
+@media only screen and (min-width: 530px) {
+  .navlinks-div:before {
+    content:'';
+  }
+  .navlink {
+    display: inline;
+     margin: 10px;
+     padding: 5px;
+     color: white;
+     line-height: 70px; //navbar height
+  }
+  .button-link {
+    width: 40%;
+  }
+  .portrait-small {
+    margin: 40px auto;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .portrait-small {
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .portrait {
+    float: left;
+    margin: 50px;
+  }
+  .bio {
+    text-align: left;
+    margin: 100px 40px;
+  }
+  h3 {
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  iframe, iframe:hover {
+    height: 500px;
+  }
+  h3, p {
+    max-width: 800px;
+  }
+  .wrapper {
+    width: 800px;
+  }
+  .button-div {
+    clear: both;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  iframe, iframe:hover {
+    height: 600px;
+  }
+  h3, p {
+    max-width: 900px;
+  }
+  .wrapper {
+    width: 900px;
+  }
+}
