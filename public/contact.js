@@ -1,9 +1,10 @@
 'use strict';
+
 let messageSentAlert = `<div class="sent-message-alert"><p>Your message was sent successfully!</p><img src="images/close-button.svg" class="close-button"/></div>`;
 let messageFailedAlert = `<div class="sent-message-alert failed-alert"><p>Something went wrong. your message we not sent.</p><img src="images/close-button.svg" class="close-button"/></div>`;
 
 function sendEmailRequest(message) {
-  fetch(`${BASE_URL}/contact`, {
+  fetch(`https://alinalodahl.herokuapp.com/contact`, {
     method: "POST",
     body: JSON.stringify(message),
     headers: {
