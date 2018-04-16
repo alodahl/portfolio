@@ -3,7 +3,7 @@ let messageSentAlert = `<div class="sent-message-alert"><p>Your message was sent
 let messageFailedAlert = `<div class="sent-message-alert failed-alert"><p>Something went wrong. your message we not sent.</p><img src="images/close-button.svg" class="close-button"/></div>`;
 
 function sendEmailRequest(message) {
-  fetch(`http://localhost:3000/contact`, {
+  fetch(`${BASE_URL}/contact`, {
     method: "POST",
     body: JSON.stringify(message),
     headers: {
