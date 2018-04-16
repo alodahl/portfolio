@@ -26,13 +26,28 @@ main {
 }
 .navlinks-div {
  float: right;
+ position: absolute;
+ height: 243px;
+ width: 100px;
+ right: 10px;
 }
-.navlinks-div:before {
-  content:'\2630';
-  margin-top: 40px;
+.dropdown-icon {
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+.dropdown-icon:hover {
+  color: var(--accent);
 }
 .navlink {
- display: none;
+ display: block;
+ padding: 10px 20px;
+ background: black;
+ color: white;
+ text-align: center;
+}
+.navlink:last-child {
+ padding-bottom: 15px;
 }
 .navlink:hover {
   color: var(--dark);
@@ -154,10 +169,22 @@ iframe:hover {
   margin-right: 10px;
   color: var(--dark);
 }
+.hidden {
+  display: none;
+}
 
 @media only screen and (min-width: 530px) {
-  .navlinks-div:before {
-    content:'';
+  .dropdown-icon {
+    display: none;
+  }
+  .navlinks-only {
+   display: inline-block;
+  }
+  .navlinks-div {
+   float: right;
+   position: relative;
+   height: 70px;
+   width: 320px;
   }
   .navlink {
     display: inline;
