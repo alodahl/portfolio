@@ -163,11 +163,11 @@ iframe:hover {
 }
 .project-link {
   margin-right: 10px;
-  color: var(--accent);
+  color: var(--dark);
 }
 .project-link:hover {
   margin-right: 10px;
-  color: var(--dark);
+  color: var(--accent);
 }
 .hidden {
   display: none;
@@ -184,7 +184,7 @@ iframe:hover {
    float: right;
    position: relative;
    height: 70px;
-   width: 320px;
+   width: 330px;
   }
   .navlink {
     display: inline;
