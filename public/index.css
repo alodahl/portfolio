@@ -36,7 +36,7 @@ main {
   text-align: center;
   padding: 5px;
 }
-.dropdown-icon:hover {
+.dropdown-icon:hover, .navlink:hover{
   color: var(--accent);
 }
 .navlink {
@@ -48,9 +48,6 @@ main {
 }
 .navlink:last-child {
  padding-bottom: 15px;
-}
-.navlink:hover {
-  color: var(--dark);
 }
 .name {
   float: left;
@@ -92,17 +89,18 @@ h1 {
   width: 90%;
 }
 .project-div {
-  margin: 40px auto;
+  margin: 100px auto;
 }
 h2, h3 {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 h2 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 200;
+  margin: 15px 0;
 }
 h3 {
-  color: var(--accent);
+  color: var(--dark);
 }
 .button-div {
   margin: 0 auto;
@@ -113,28 +111,28 @@ h3 {
   width: 85%;
   display: inline-block;
   padding: 4px;
-  background-color: var(--accent);
-  color: white;
   box-sizing: border-box;
   margin: 15px;
-  border: 1px solid var(--accent);
-
+  color: white;
+  background-color: var(--dark);
+  border: 1px solid var(--dark);
   font: 20px "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
   font-weight: 300;
   text-align: center;
 }
 .button-link-email {
   background-color: white;
-  color: var(--accent);
-}
-.button-link-bottom {
-  background-color: var(--dark);
-  border: 1px solid var(--dark);
-}
-.button-link-email-bottom {
-  background-color: white;
   color: var(--dark);
   border: 1px solid var(--dark);
+}
+.button-link:hover {
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
+}
+.button-link-email:hover {
+  background-color: white;
+  color: var(--accent);
+  border: 1px solid var(--accent);
 }
 iframe, iframe:hover {
   border: 2px solid var(--lightgray);
@@ -155,11 +153,14 @@ iframe:hover {
   -ms-filter: grayscale(0%);
   -o-filter: grayscale(0%);
 }
+i:before {
+    font-size: 25px;
+}
 .link {
-  color: var(--accent);
+  color: var(--dark);
 }
 .link:hover {
-  color: var(--dark);
+  color: var(--accent);
 }
 .project-link {
   margin-right: 10px;
