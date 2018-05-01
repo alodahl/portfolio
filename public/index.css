@@ -168,7 +168,7 @@ i:before {
   display: none;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 450px) {
   .portrait {
     height: 350px;
   }
