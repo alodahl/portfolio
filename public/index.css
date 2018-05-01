@@ -147,20 +147,6 @@ iframe, iframe:hover {
   height: 400px;
   width: 100%;
 }
-iframe {
-  +filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-}
-iframe:hover {
-  +filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-}
 i:before {
     font-size: 25px;
 }
@@ -220,6 +206,20 @@ i:before {
 }
 
 @media only screen and (min-width: 961px) {
+  iframe {
+    +filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+  }
+  iframe:hover {
+    +filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+  }
   .portrait {
     float: left;
     margin: 50px;
