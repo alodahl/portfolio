@@ -73,7 +73,7 @@ main {
   shape-outside: circle(50%);
 }
 .portrait {
-  height: 350px;
+  height: 300px;
   margin: 50px auto 0 auto;
 }
 .portrait-small {
@@ -166,6 +166,12 @@ i:before {
 }
 .hidden {
   display: none;
+}
+
+@media only screen and (min-width: 400px) {
+  .portrait {
+    height: 350px;
+  }
 }
 
 @media only screen and (min-width: 530px) {
