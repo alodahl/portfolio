@@ -45,68 +45,70 @@
         <form>
           <div class="form-header-div">
             <img class="portrait-small" alt="Alina Lodahl Portrait" src="https://scontent-sjc3-1.cdninstagram.com/vp/9346be2e32af5e75c9edfb47287f12e7/5B646B59/t51.2885-19/s320x320/24175631_242718426263590_2131905565394206720_n.jpg"/>
-            <p class="message">
+            <h3 class="message">
               Use this form to send me a message.
               <br>
               I look forward to hearing from you!
-            </p>
-        </div>
-          <label for="name" class="name-label first-name">
-            full name
-          </label>
-          <input
+            </h3>
+          </div>
+          <div class="form-inputs-div">
+            <label for="name" class="name-label first-name">
+              full name
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="block block-input"
+              value=""
+              autocomplete='name'
+            />
+            <label for="organization" class="name-label">
+              organization
+            </label>
+            <input
+              type="text"
+              name="organization"
+              id="organization"
+              class="block block-input"
+              value=""
+              autocomplete='organization'
+            />
+            <label for="email" class="block">
+              email address
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="block block-input"
+              value=""
+              autocomplete='email'
+            />
+            <label for="subject" class="block">
+              message subject
+            </label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              class="block block-input"
+              value=""
+              autocomplete='subject'
+            />
+            <label for="email-text" class="block">
+              please enter your message here:
+            </label>
+            <textarea
             type="text"
-            name="name"
-            id="name"
-            class="block block-input"
+            name="email-text"
+            id="email-text"
+            class="block block-input issue"
             value=""
-            autocomplete='name'
-          />
-          <label for="organization" class="name-label">
-            organization
-          </label>
-          <input
-            type="text"
-            name="organization"
-            id="organization"
-            class="block block-input"
-            value=""
-            autocomplete='organization'
-          />
-          <label for="email" class="block">
-            email address
-          </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="block block-input"
-            value=""
-            autocomplete='email'
-          />
-          <label for="subject" class="block">
-            message subject
-          </label>
-          <input
-            type="text"
-            name="subject"
-            id="subject"
-            class="block block-input"
-            value=""
-            autocomplete='subject'
-          />
-          <label for="email-text" class="block">
-            please enter your message here:
-          </label>
-          <textarea
-          type="text"
-          name="email-text"
-          id="email-text"
-          class="block block-input issue"
-          value=""
-          required=true
-          >
-          </textarea>
+            required=true
+            >
+            </textarea>
+          </div>
           <div class="extra"></div>
           <button class="send-message-button js-send-message-button" type="submit">send message</button>
         </form>

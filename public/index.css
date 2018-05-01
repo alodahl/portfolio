@@ -6,13 +6,16 @@
 }
 body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 200;
   margin: 0;
   text-align: left;
 }
 a {
   text-decoration: none;
+}
+p {
+  letter-spacing: 0.3px;
 }
 main {
   margin: 40px auto;
@@ -28,16 +31,17 @@ main {
  float: right;
  position: absolute;
  height: 243px;
- width: 100px;
+ width: 110px;
  right: 10px;
 }
 .dropdown-icon {
   color: white;
   text-align: center;
-  padding: 5px;
+  padding: 1px;
 }
 .dropdown-icon:hover, .navlink:hover{
   color: var(--accent);
+  cursor: pointer;
 }
 .navlink {
  display: block;
@@ -56,6 +60,7 @@ main {
 .name p {
   font: 30px "SignPainter", "Lato", "Helvetica Neue", Arial, sans-serif;
   margin: 0 10px;
+  letter-spacing: 0.8px;
   color: var(--accent);
   line-height: 75px; //navbar height
 }
@@ -68,12 +73,14 @@ main {
   shape-outside: circle(50%);
 }
 .portrait {
-  height: 300px;
+  height: 350px;
   margin: 50px auto 0 auto;
 }
 .portrait-small {
-  height: 150px;
+  height: 200px;
   margin: 40px auto;
+  clear: right;
+  display: block;
 }
 h1 {
   text-align: center;
@@ -100,6 +107,7 @@ h2 {
   margin: 15px 0;
 }
 h3 {
+  font-size: 24px;
   color: var(--dark);
 }
 .button-div {
@@ -117,7 +125,7 @@ h3 {
   background-color: var(--dark);
   border: 1px solid var(--dark);
   font: 20px "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 .button-link-email {
@@ -136,7 +144,7 @@ h3 {
 }
 iframe, iframe:hover {
   border: 2px solid var(--lightgray);
-  height: 600px;
+  height: 400px;
   width: 100%;
 }
 iframe {
@@ -180,6 +188,7 @@ i:before {
   }
   .navlinks-only {
    display: inline-block;
+   width: 340px;
   }
   .navlinks-div {
    float: right;
@@ -194,21 +203,23 @@ i:before {
      color: white;
      line-height: 70px; //navbar height
   }
-  .button-link {
-    width: 40%;
-  }
   .portrait-small {
-    margin: 40px auto;
+    margin: 0 auto 40px auto;
   }
 }
 
 @media only screen and (min-width: 700px) {
-  .portrait-small {
-    float: left;
-  }
 }
 
 @media only screen and (min-width: 800px) {
+  .portrait-small {
+  }
+  iframe, iframe:hover {
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 961px) {
   .portrait {
     float: left;
     margin: 50px;
@@ -220,12 +231,6 @@ i:before {
   h3 {
     padding-top: 50px;
   }
-}
-
-@media only screen and (min-width: 961px) {
-  iframe, iframe:hover {
-    height: 500px;
-  }
   h3, p {
     max-width: 800px;
   }
@@ -234,6 +239,10 @@ i:before {
   }
   .button-div {
     clear: both;
+  }
+  .button-link {
+    width: 40%;
+    font-weight: 300;
   }
 }
 

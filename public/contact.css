@@ -7,12 +7,15 @@
   position: relative;
   box-sizing: border-box;
   color: var(--gray);
-  font: 18px "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
+  font: 22px "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
   font-weight: 200;
   text-align: center;
   margin: 100px auto;
   width: 300px;
   height: 100vh;
+}
+label {
+  font-weight: 200;
 }
 input,
 textarea,
@@ -24,6 +27,10 @@ textarea,
   font: 16px "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
   text-align: center;
 }
+.form-inputs-div {
+  position: relative;
+  top: 100px;
+}
 .block, .message {
   display: block;
   margin: 0 auto;
@@ -32,9 +39,9 @@ textarea,
 .message {
   clear: left;
   margin: 50px auto;
-  font-size: 20px;
   font-weight: 400;
   color: var(--dark);
+  clear: left;
 }
 .block-input {
   display: block;
@@ -48,7 +55,7 @@ textarea,
 .send-message-button {
   width: 100%;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 22px;
   padding: 4px;
   background-color: var(--dark);
   border: 1px solid var(--dark);
@@ -60,7 +67,7 @@ textarea,
 }
 .extra {
   display: block;
-  height: 20px;
+  height: 120px;
 }
 .sent-message-alert {
   border: 1px solid var(--accent);
@@ -90,6 +97,19 @@ textarea,
   }
   .message {
     width: 100%;
+    padding-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .message {
+    padding-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 648px) {
+  .message {
+    margin: 0 auto;
   }
 }
 
@@ -108,8 +128,7 @@ textarea,
     width: 550px;
   }
   .message {
-    padding-top: 90px;
-    clear: none;
+    padding-top: 0px;
   }
   .block-input,
   .name-label {
@@ -118,7 +137,16 @@ textarea,
   .issue {
     height: 140px;
   }
-  .name-label {
-    clear: both;
+}
+
+@media only screen and (min-width: 720px) {
+  .message {
+    float: left;
+  }
+  .form-inputs-div {
+    top: 40px;
+  }
+  .extra {
+    height: 65px;
   }
 }
