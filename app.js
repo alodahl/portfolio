@@ -22,7 +22,8 @@ app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 var isOriginValid = function (req, callback) {
   var corsOptions;
-  if (req.header('Origin') === "http://alinalodahl.com") {
+  console.log(req.header('Origin'));
+  if (req.header('Origin') === "http://alinalodahl.herokuapp.com") {
     corsOptions = { origin: true } // reflect (enable) the requested origin in the CORS response
   }else{
     corsOptions = { origin: false } // disable CORS for this request
