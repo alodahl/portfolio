@@ -9,7 +9,7 @@ function sendEmailRequest(message) {
     body: JSON.stringify(message),
     headers: {
       "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "http://alinalodahl.herokuapp.com"
+      "Access-Control-Allow-Origin": "*"
     }
   })
     .then(res => {
