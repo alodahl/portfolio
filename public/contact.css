@@ -88,7 +88,7 @@ textarea,
 }
 
 
-@media only screen and (min-device-width: 530px) {
+@media only screen and (min-width: 530px) {
   .form-header-div {
     max-width: 570px;
     padding: 0 40px 40px 40px;
@@ -101,19 +101,19 @@ textarea,
   }
 }
 
-@media only screen and (min-device-width: 600px) {
+@media only screen and (min-width: 600px) {
   .message {
     padding-top: 0px;
   }
 }
 
-@media only screen and (min-device-width: 648px) {
+@media only screen and (min-width: 648px) {
   .message {
     margin: 0 auto;
   }
 }
 
-@media only screen and (min-device-width: 700px) {
+@media only screen and (min-width: 700px) {
   .form-header-div {
     max-width: 570px;
     padding: 0 40px 40px 40px;
@@ -139,7 +139,7 @@ textarea,
   }
 }
 
-@media only screen and (min-device-width: 720px) {
+@media only screen and (min-width: 720px) {
   .message {
     float: left;
   }
