@@ -127,8 +127,7 @@ h2.message {
   background-color: var(--dark);
   border: 1px solid var(--dark);
   font: 24px "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
-  font-weight: 200;
-  font-weight: 400;
+  font-weight: 100;
   text-align: center;
 }
 .button-link-email {
@@ -147,7 +146,9 @@ h2.message {
 }
 .iframe-div {
   height: 500px;
-  width: 100%;
+  width: 320px;
+  right: 25px;
+  position: relative;
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
   border: 2px solid var(--lightgray);
@@ -179,6 +180,12 @@ i:before {
   display: none;
 }
 
+@media only screen and (min-width: 400px) {
+  .iframe-div {
+    width: 100%;
+    right: none;
+  }
+}
 @media only screen and (min-width: 450px) {
   .portrait {
     height: 350px;
@@ -273,7 +280,6 @@ i:before {
   .button-link {
     padding: 4px; */
     font: 20px "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
-    font-weight: 200;
   }
 }
 
