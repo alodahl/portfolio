@@ -36,6 +36,10 @@ main {
  width: 110px;
  right: 10px;
 }
+.navlinks-only {
+  position: relative;
+  z-index: 1;
+}
 .dropdown-icon {
   color: white;
   text-align: center;
@@ -127,7 +131,7 @@ h2.message {
   background-color: var(--dark);
   border: 1px solid var(--dark);
   font: 24px "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   text-align: center;
 }
 .button-link-email {
@@ -183,7 +187,7 @@ i:before {
 @media only screen and (min-width: 400px) {
   .iframe-div {
     width: 100%;
-    right: none;
+    right: 0;
   }
 }
 @media only screen and (min-width: 450px) {
@@ -263,7 +267,6 @@ i:before {
   }
   .button-link {
     width: 40%;
-    font-weight: 300;
   }
 }
 
@@ -278,8 +281,7 @@ i:before {
     width: 900px;
   }
   .button-link {
-    padding: 4px; */
-    font: 20px "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
+    font: 20px 200 "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
   }
 }
 

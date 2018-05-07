@@ -46,7 +46,10 @@ textarea,
 .block-input {
   display: block;
   margin: 5px auto 20px auto;
-  height: 25px;
+  height: 30px;
+}
+.block-input[type=text] {
+  font-size: 20px;
 }
 .issue {
   height: 200px;
@@ -54,7 +57,7 @@ textarea,
 }
 .send-message-button {
   width: 100%;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 24px;
   padding: 8px;
   background-color: var(--dark);
@@ -148,12 +151,5 @@ textarea,
   }
   .extra {
     height: 65px;
-  }
-}
-
-@media only screen and (min-width: 1080px) {
-  .send-message-button {
-    font-size: 22px;
-    padding: 4px;
   }
 }
