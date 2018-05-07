@@ -8,7 +8,8 @@ function sendEmailRequest(message) {
     method: "POST",
     body: JSON.stringify(message),
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "http://alinalodahl.herokuapp.com"
     }
   })
     .then(res => {
