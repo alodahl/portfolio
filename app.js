@@ -20,7 +20,17 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
-app.use('/contact', cors(), index);
+var isOriginValid = function (req, callback) {
+  var corsOptions;
+  if (req.header('Origin') === "http://alinalodahl.com") {
+    corsOptions = { origin: true } // reflect (enable) the requested origin in the CORS response
+  }else{
+    corsOptions = { origin: false } // disable CORS for this request
+  }
+  callback(null, corsOptions) // callback expects two parameters: error and options
+}
+
+app.use('/contact', cors(isOriginValid), index);
 app.use('/', index);
 console.log("Your app is listening at PORT 3000");
 
