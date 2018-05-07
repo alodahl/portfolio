@@ -120,13 +120,14 @@ h2.message {
 .button-link {
   width: 85%;
   display: inline-block;
-  padding: 4px;
+  padding: 8px;
   box-sizing: border-box;
   margin: 15px;
   color: white;
   background-color: var(--dark);
   border: 1px solid var(--dark);
-  font: 20px "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
+  font: 24px "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
+  font-weight: 200;
   font-weight: 400;
   text-align: center;
 }
@@ -268,6 +269,11 @@ i:before {
   }
   .wrapper {
     width: 900px;
+  }
+  .button-link {
+    padding: 4px; */
+    font: 20px "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
+    font-weight: 200;
   }
 }
 

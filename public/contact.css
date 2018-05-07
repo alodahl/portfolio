@@ -55,8 +55,9 @@ textarea,
 .send-message-button {
   width: 100%;
   font-weight: 300;
-  font-size: 22px;
-  padding: 4px;
+  font-size: 24px;
+  padding: 8px;
+  /* padding: 4px; */
   background-color: var(--dark);
   border: 1px solid var(--dark);
   color: white;
@@ -148,5 +149,12 @@ textarea,
   }
   .extra {
     height: 65px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .send-message-button {
+    font-size: 22px;
+    padding: 4px;
   }
 }
