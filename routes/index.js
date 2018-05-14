@@ -12,9 +12,9 @@ router.get('/', function(req, res, next) {
 router.post('/contact', (req, res) => {
   const msg = {
       to: ADMIN_EMAIL,
-      from: "email@alina.lodahl.co",
+      from: "email@alinalodahl.com",
       subject: req.body.subject,
-      text: `You received a message via alina.lodahl.co:
+      text: `You received a message via alinalodahl.com:
       ${req.body.name} at ${req.body.email} asked: '${req.body.emailText}'`,
       html: `<div style="font:20px 100 'Helvetica Neue', Helvetica; font-weight:100;">
               <p><b>You received a message via alina.lodahl.co</b></p>
