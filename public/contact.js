@@ -1,7 +1,7 @@
 'use strict';
 
-let messageSentAlert = `<div class="sent-message-alert"><p>Your message was sent successfully!</p><img src="images/close-button.svg" class="close-button"/></div>`;
-let messageFailedAlert = `<div class="sent-message-alert failed-alert"><p>Something went wrong. your message we not sent.</p><img src="images/close-button.svg" class="close-button"/></div>`;
+let messageSentAlert = `<div class="sent-message-alert"><p style="margin: 20px auto;">Your message was sent successfully!</p><img src="images/close-button.svg" class="close-button"/></div>`;
+let messageFailedAlert = `<div class="sent-message-alert failed-alert"><p style="margin: 20px auto;">Something went wrong. your message we not sent.</p><img src="images/close-button.svg" class="close-button"/></div>`;
 
 function sendEmailRequest(message) {
   fetch(`https://alinalodahl.herokuapp.com/contact`, {
