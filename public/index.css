@@ -77,6 +77,7 @@ main {
   display: block;
   border-radius: 50%;
   shape-outside: circle(50%);
+  clip-path: circle(50%);
 }
 .portrait {
   height: 300px;
@@ -215,7 +216,7 @@ i:before {
   }
   .navlinks-only {
    display: inline-block;
-   width: 340px;
+   width: 360px;
   }
   .navlinks-div {
    float: right;
