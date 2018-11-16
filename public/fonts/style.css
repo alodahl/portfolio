@@ -37,6 +37,9 @@
   font-size: 30px;
 }
 
+.icon-markdown:before {
+  content: "\e90a";
+}
 .icon-sass:before {
   content: "\e900";
 }
@@ -55,8 +58,17 @@
 .icon-mocha-logo:before {
   content: "\e905";
 }
+.icon-apollo-seeklogocom:before {
+  content: "\e906";
+}
 .icon-firebase:before {
   content: "\e907";
+}
+.icon-gatsby:before {
+  content: "\e908";
+}
+.icon-GraphQL_Logo:before {
+  content: "\e909";
 }
 .icon-typescript:before {
   content: "\e90c";
