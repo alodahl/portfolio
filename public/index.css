@@ -181,6 +181,10 @@ iframe, iframe:hover{
 i:before {
     font-size: 25px;
 }
+.curriculum-image {
+  height: 1400px;
+  overflow-y: scroll;
+}
 .link {
   color: var(--dark);
 }
