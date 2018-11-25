@@ -250,14 +250,14 @@ i:before {
 }
 
 @media only screen and (min-width: 961px) {
-  iframe {
+  iframe, .curriculum-image {
     +filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
   }
-  iframe:hover, iframe:active, iframe:focus {
+  iframe:hover, iframe:active, iframe:focus, .curriculum-image:hover {
     +filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
